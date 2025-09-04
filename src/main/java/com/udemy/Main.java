@@ -19,35 +19,35 @@ public class Main {
         user.setLastName("Messi");
         userService.save(user);
 
-//        System.out.println(userService.findById(user.getId()));
-//        System.out.println(userService.findAll());
-//
-//        user.setFirstName("Lionel");
-//        user.setLastName("Messi");
-//        userService.update(user);
-//        System.out.println(userService.findById(user.getId()));
-//
-//        // MOVIE
-//        MovieService movieService = new MovieServiceImpl();
-//
-//        Movie movie = new Movie();
-//        movie.setTitle("F1");
-//        movieService.save(movie);
-//
-//        System.out.println(movieService.findById(movie.getId()));
-//
-//        // USERWATCHEDLIST
-//        UserWatchedListService userWatchedListService = new UserWatchedListServiceImpl();
-//
-//        UserWatchedList userWatchedList = new UserWatchedList();
-//        userWatchedList.setUser(user);
-//        userWatchedList.setMovie(movie);
-//        userWatchedList.setPercentOfWatched(100);
-//
-//        userWatchedListService.save(userWatchedList);
-//
-//        System.out.println(userWatchedListService.findById(userWatchedList.getId()));
-//
-//        userService.deleteById(user.getId());
+        System.out.println(userService.findById(user.getId()));
+        System.out.println(userService.findAll());
+
+        user.setFirstName("Lionel");
+        user.setLastName("Messi");
+        userService.update(user);
+        System.out.println(userService.findById(user.getId()));
+
+        // MOVIE
+        MovieService movieService = new MovieServiceImpl();
+
+        Movie movie = new Movie();
+        movie.setTitle("F1");
+        movieService.save(movie);
+
+        System.out.println(movieService.findById(movie.getId()));
+
+        // USERWATCHEDLIST
+        UserWatchedListService userWatchedListService = new UserWatchedListServiceImpl();
+
+        UserWatchedList userWatchedList = new UserWatchedList();
+        userWatchedList.setUser(user);
+        userWatchedList.setMovie(movie);
+        userWatchedList.setPercentOfWatched(100);
+
+        userWatchedListService.save(userWatchedList);
+
+        System.out.println(userWatchedListService.findById(userWatchedList.getId()));
+
+        userService.deleteById(user.getId());
     }
 }
