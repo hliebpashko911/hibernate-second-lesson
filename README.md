@@ -20,11 +20,10 @@
    - In `UserWatchedListService`, add a restriction for the rating value.
    
 
-
-```java
  ## Solution
  1. Solution for task 3.
 
+```java
 @Entity
 @Table(name = "movies")
 public class Movie {
